@@ -1,4 +1,5 @@
 #!/bin/bash
+set -o errexit -o pipefail -o nounset
 
 cp -f ${KEYS}/ssh_host_* /etc/ssh/
 chown -R root. /etc/ssh
