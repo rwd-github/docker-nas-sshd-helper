@@ -14,7 +14,7 @@ RUN echo -e "Port 22\n" >> /etc/ssh/sshd_config \
 	
 EXPOSE 22
 
-ENV SSHKEYS=
+ENV SSHKEYS= 
 
 COPY entrypoint.sh /
 RUN chmod +x /entrypoint.sh
