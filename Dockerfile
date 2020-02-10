@@ -1,5 +1,4 @@
 FROM alpine:latest
-MAINTAINER RWd <rwd-github@gmx.net>
 
 RUN apk update \
 	&& apk upgrade \
