@@ -9,6 +9,7 @@ RUN echo -e "Port 22\n" >> /etc/ssh/sshd_config \
 	&& echo -e "PasswordAuthentication no\n" >> /etc/ssh/sshd_config \
 	&& echo -e "ChallengeResponseAuthentication no\n" >> /etc/ssh/sshd_config \
 	&& echo -e "PermitRootLogin yes\n" >> /etc/ssh/sshd_config \
+	&& echo -e "PermitTunnel yes\n" >> /etc/ssh/sshd_config \
 	&& passwd -u root
 	
 EXPOSE 22
